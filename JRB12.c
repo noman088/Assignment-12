@@ -10,7 +10,7 @@
 
 // int main()
 // {
-//     int n;/
+//     int n;
 //     printf("Enter a Number");
 //     scanf("%d", &n);
 //     natural(n);
@@ -182,21 +182,22 @@
 
 // // 10. Write a recursive function to print reverse of a given number
 // #include <stdio.h>
-// void rev(int);
-// void rev(int a)
+// int s = 0, r;
+// int rev(int a)
 // {
 //     if (a == 0)
-//         return 0;
-//     a = a % 10;
-//     printf("%d", a);
-//     rev(a/10);
+//         return s;
+//     r = a % 10;
+//     s = (s * 10) + r;
+//     rev(a / 10);
+//     return s;
 // }
 // int main()
 // {
 //     int num;
 //     printf("Enter a number ");
-//     scanf("%d ", &num);
-//     rev(num);
-
+//     scanf("%d", &num);
+//     s = rev(num);
+//     printf("%d", s);
 //     return 0;
 // }
